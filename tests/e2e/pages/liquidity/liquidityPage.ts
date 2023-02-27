@@ -91,36 +91,6 @@ export class LiquidityPage extends CommonPage {
     }   
   }
 
-  changeToken(tokenA, tokenB, network = "BNB Smart Chain") {
-    if(network == "BNB Smart Chain" || network == "BNB Smart Chain Testnet") {
-      // this.firstPair.invoke('text').then(text => {
-      //   if (text != tokenA)
-      //   {
-      //     this.firstPair.click({force: true})
-      //     this.searchToken(tokenA)
-      //     this.firstPair.should('have.text', tokenA)
-      //   }
-      // })
-      // this.secondPair.invoke('text').then(text => {
-      //   if (text != tokenA)
-      //   {
-      //     this.secondPair.click({force: true})
-      //     this.searchToken(tokenA)
-      //     this.secondPair.should('have.text', tokenB)
-      //   }
-      // })
-      this.selectToken(this.firstPair, tokenA)
-      this.selectToken(this.secondPair, tokenB)
-
-      this.addLiquidityPairButton.click({force: true})
-    }
-    else 
-    {
-      this.selectToken(this.firstPair, tokenA)
-      this.selectToken(this.secondPair, tokenB)
-    }
-  }
-
   searchToken(token) {
     cy.contains('Select a Token').should('be.visible')
     let tokenSearch = ((token == "tBNB") ? "BNB" : token)
@@ -143,7 +113,6 @@ export class LiquidityPage extends CommonPage {
       }
     })
   }
-
 
   clickSupplyButton(tokenA, tokenB) {
     cy.get('button').contains(`Enable ${tokenA}`, {timeout: 3000}).then($tokenButton => {
