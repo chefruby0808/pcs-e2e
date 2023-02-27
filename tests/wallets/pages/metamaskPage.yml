@@ -1,0 +1,26 @@
+get_started: 'button[data-testid="first-time-flow__button"]'
+agree_button: 'button[data-testid="page-container-footer-next"]'
+create_wallet: 'button[data-testid="create-wallet-button"]'
+agree_button: 'button[data-testid="metametrics-i-agree"]'
+new_password: 'input[data-testid="create-password"]'
+confirm_password: 'input[data-testid="confirm-password"]'
+checkbox_confirm: 'div[class="first-time-flow__checkbox"]'
+button_confirm: '.btn-primary'
+remind_later: '.btn-secondary'
+checkbox_skip_security: 'input[data-testid="skip-srp-backup-popover-checkbox"]'
+skip_button: 'button[data-testid="skip-srp-backup"]'
+onboard_complete_button: 'button[data-testid="onboarding-complete-done"]'
+pin_extension: 'button[data-testid="pin-extension-next"]'
+done_button: 'button[data-testid="pin-extension-done"]'
+account_menu_button: 'button[data-testid="account-menu-icon"]'
+
+input_private_key: 'input[class="new-account-import-form__input-password"]'
+import_complete: '.btn--large new-account-create-form__button'
+
+approve_button: '.confirmation-page .btn-primary'
+
+confirm_button: 'button[data-testid="page-container-footer-next"]'
+
+reject_button: 'button[data-testid="page-container-footer-cancel"]'
+
+title_popup: '.main-container-wrapper h3'

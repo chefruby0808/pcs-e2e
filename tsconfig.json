@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "allowJs": true,
+        "baseUrl": "../../node_modules",
+        "types": ["cypress", "cypress-wait-until", "@testing-library/cypress", "node"],
+        "outDir": "./output",
+        "typeRoots": [ "../node_modules/@types" ]
+    },
+    "include": ["**/*.ts", "tests/support/index"]
+}
